@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  overflow-x: hidden;
+}
+
+
+  p,a{
+    font-family: "Poppins";
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-family: "Unbounded";
+  }
+  .font-unb{
+    font-family: 'Unbounded';
+  }
+  .font-phil{
+    font-family: "Philosopher";
+  }
+  .bg-lime{
+    background-color: #EAF586;
+  }
+  .bg-purple{
+    background-color: #c0c0db;
+  }
+  .bg-green{
+    background-color: #317874;
+  }
+  .bg-lpink{
+    background-color: #E2D2F9;
+  }
+  .bg-beige{
+    background-color: #F0EDE9;
+  }
+  .bg-peach{
+    background-color: #F9DFD6;
+  }
+  .border-green{
+    border-color: #456D45;
+  }
+  .bg-lgreen{
+    background-color: #D8E0C8;
+  }
+    
+  .bg-pink{
+    background-color: #E9C4C7;
+  }
+  .bg-red{
+    background-color: #EB5C5D;
+  }
+  .bg-dpurple{
+    background-color: #003333;
+  }
+  .text-purple{
+    color: #E0E0FE;
+  }
+  .bg-boxhero{
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+  }
+  .form-section{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  html, body, #root {
+    height: 100%;
+  }
+  .page-top{
+    position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  margin-bottom: 3rem;
+
+  }
+ .page-bottom{
+  left: 0;
+  bottom: 0;
+  right: 0;
+ }
+ footer{
+  display: block;
+ }
+ .footer{
+  margin-top: 0px;
+ }
+  /* Hero Section */
+  .hero-bg{
+    
+  background-image: url("https://cdn.pixabay.com/photo/2021/03/14/02/36/look-6093196_1280.jpg");
+    background-color:#B1AFC6;
+    background-size:cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  .sec3-img{
+    border-radius: 50%;
+  }
+  .section2{
+    background-image: url(https://www.freeiconspng.com/uploads/tile-grid-png-6.png);
+    
+  }
+ 
+  @media screen and (max-width: 640px) {
+    .main {
+      padding: 0;
+    }
+    .hero-bg{
+    
+      background-image: url("https://cdn.pixabay.com/photo/2021/03/14/02/36/look-6093196_1280.jpg");
+        background-color:#B1AFC6;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+  }
+
+
+/* Tailwind Styles */
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+}
+
+.black_btn {
+  @apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
+}
+
+.head_text {
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
+}
+
+.orange_gradient {
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+
+.desc {
+  @apply mt-5 text-lg text-gray-600 sm:text-xl text-center max-w-2xl;
+}
+
+
+
+
+.submit_btn {
+  @apply hover:border-gray-700 hover:text-gray-700 absolute inset-y-0 right-0 my-1.5 mr-1.5 flex w-10 items-center justify-center rounded border border-gray-200 font-sans text-sm font-medium text-gray-400;
+}
+
+.link_card {
+  @apply p-3 flex justify-start items-center flex-row bg-white border border-gray-200 gap-3 rounded-lg cursor-pointer;
+}
+
+.copy_btn {
+  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+}
+
+.blue_gradient {
+  @apply font-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+}
+
+.summary_box {
+  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
+}
